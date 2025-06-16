@@ -8,6 +8,13 @@ images: {
             
         }
     ]
+},
+
+experimental: {
+    serverActions: {
+        bodySizeLimit:"5mb"
+    }
+
 }
 
 };
