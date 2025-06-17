@@ -34,25 +34,21 @@ useEffect(() => {
     return (
         <div className="pb-20 px-4">
             <div className="container mx-auto text-center">
-                <h1 className="text-5xl md:text-8xl lg:text-[105px] pb-6 bg-clip-text text-transparent bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-700 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text ">
+                <h1 className="text-5xl md:text-8xl lg:text-[95px] pb-6 bg-clip-text text-transparent bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text ">
                     Manage Your Finances <br /> with Intelligence
                 </h1>
-                <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                <p className="text-xl text-gray-500 mb-8 max-w-2xl mx-auto">
                     An AI-powered financial management platform that helps you track,
                     analyze, and optimize your spending with real-time insights.
                 </p>
                 <div className="display-flex justify-center space-x-4">
                     <Link href="/dashboard">
-                        <Button size="lg" className="px-8">
+                        <Button size="lg" className="px-8 w-100 h-10 bg-gradient-to-br from-blue-500 via-pink-500 to-purple-500
+                animate-gradient hover:opacity-90 transition-opacity text-white hover:text-white">
                             Get Started
                         </Button>
                     </Link>
 
-                    <Link href="https://youtu.be/egS6fnZAdzk?si=OuerPDFzZ335AzcK">
-                        <Button size="lg" vareiant="outline" className="px-8">
-                            Watch Demo
-                        </Button>
-                    </Link>
                 </div>
                 <div className="hero-image-wrapper">
                     <div ref={imageRef} className="hero-image">

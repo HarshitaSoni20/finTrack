@@ -1,10 +1,10 @@
 import HeroSection from "@/components/hero";
 import { featuresData, howItWorksData, statsData, testimonialsData } from "@/data/landing";
-import { Dialog } from "@radix-ui/react-dialog";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { Link } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import React from "react";
 
 export default function Home() {
   return (
@@ -47,23 +47,23 @@ export default function Home() {
         </div>
       </section>
 
- <section className="py-20 bg-blue-50">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-16">How It Works</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {howItWorksData.map((step, index) => (
-        <div key={index} className="text-center">
-          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            {step.icon}
+      <section className="py-20 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-16">How It Works</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {howItWorksData.map((step, index) => (
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  {step.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
+              </div>
+            ))}
           </div>
-          <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
-          <p className="text-gray-600">{step.description}</p>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
- <section id="testimonials" className="py-20">
+      </section>
+      <section id="testimonials" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">
             What Our Users Say
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-  <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-blue-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Take Control of Your Finances?
@@ -104,10 +104,10 @@ export default function Home() {
             smarter with Welth
           </p>
           <Link href="/dashboard">
-          
+
             <Button
               size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-600 hover:text-white"
+              className="bg-white text-blue-600 hover:bg-blue-600 animate-bounce hover:text-white"
             >
               Start Free Trial
             </Button>
