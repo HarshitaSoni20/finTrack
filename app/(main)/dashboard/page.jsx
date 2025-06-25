@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Card } from "@/components/ui/card";
 import { Plus } from "lucide-react";
 import { CardContent } from "@/components/ui/card";
-import CreateAccountDrawer from "@/components/create-account-drawer";
+import { CreateAccountDrawer } from "@/components/create-account-drawer";
 import { getDashboardData, getUserAccounts } from "@/actions/dashboard";
 import AccountCard from "./_components/account-card";
 import { getCurrentBudget } from "@/actions/budget";

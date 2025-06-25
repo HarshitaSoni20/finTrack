@@ -1,17 +1,14 @@
 import { getUserAccounts } from "@/actions/dashboard"; // Assuming this path
 import { defaultCategories } from "@/data/categories"; // Assuming this path
-import React from "react"; // React is imported but might not be strictly needed in a Server Component unless using hooks
-import AddTransactionForm from "../_components/transaction-form";
+import { AddTransactionForm } from "../_components/transaction-form";
 import { getTransaction } from "@/actions/transaction";
 
 
 
-const AddTransactionPage = async ({ searchParams }) => {
-  const accounts = await getUserAccounts();
-
+export default async function AddTransactionPage({ searchParams }) {
   const editId = searchParams?.edit;
+  const accounts = await getUserAccounts();
   
-  console.log(editId);
 
   let initialData = null;
   if (editId) {
@@ -19,20 +16,17 @@ const AddTransactionPage = async ({ searchParams }) => {
     initialData = transaction;
   }
 
-  return (
+ return (
     <div className="max-w-3xl mx-auto px-5">
-      <h1 className="text-5xl gradient-title mb-8 font-semibold">{editId?"Edit":"ADD"} Transaction</h1>
-  
-      
+      <div className="flex justify-center md:justify-normal mb-8">
+        <h1 className="text-5xl font-semibold gradient-title ">{editId?"Edit":"Add"} Transaction</h1>
+      </div>
       <AddTransactionForm
         accounts={accounts}
         categories={defaultCategories}
-         editMode={!!editId}
+        editMode={!!editId}
         initialData={initialData}
-       
-      /> 
+      />
     </div>
   );
-};
-
-export default AddTransactionPage;
+}

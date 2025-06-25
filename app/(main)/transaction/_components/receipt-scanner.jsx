@@ -8,7 +8,7 @@ import { Camera } from "lucide-react";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
-const ReciptScanner = ({ onScanComplete }) => {
+export function ReciptScanner ({ onScanComplete }) {
     const fileInputRef = useRef();
 
     const {
