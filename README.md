@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💰 FinTrack – Full-Stack AI Finance Tracker
 
-## Getting Started
+FinTrack is a powerful AI-driven expense tracking app designed to make personal finance management easier, smarter, and fully automated.
 
-First, run the development server:
+Built with a modern full-stack stack using Next.js 15, React 19, Prisma, and Gemini AI, it offers smart categorization, background jobs, budget alerts, and seamless user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 **Live Demo** → [fintrack.vercel.app](https://fintrack.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🖥️ Frontend
+- **Next.js 15 (App Router)** + **React 19**
+- **Tailwind CSS** + **Shadcn/UI** (beautiful UI components)
+- **Framer Motion** (smooth animations)
 
-## Learn More
+### 🛠️ Backend / Database
+- **Supabase (PostgreSQL)** – managed DB
+- **Prisma ORM** – DB schema & queries
+- **Inngest** – background jobs (budget reminders, AI analysis)
+- **Arcjet** – API security & rate limiting
 
-To learn more about Next.js, take a look at the following resources:
+### 🔐 Auth
+- **Clerk** – Auth with Google, Email & OTP
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🤖 AI & Automation
+- **Gemini AI** – for smart **OCR-based receipt scanning** & auto-categorization
+- **Resend API** – for sending email alerts and monthly summaries
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ☁️ Deployment
+- **Vercel** – instant CI/CD, serverless functions, edge runtime
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 🧾 Add / Edit / Delete Transactions
+- 📷 Scan receipts with **AI OCR (Gemini)**
+- 🧠 Auto-suggested categories via AI
+- 📊 Pie charts & Monthly summaries
+- 📬 Email budget alerts via **Resend**
+- 🔒 Clerk Auth (Google + OTP)
+- ⚙️ Background jobs with **Inngest**
+- 📈 Responsive UI (Shadcn + Tailwind)
+
+---
