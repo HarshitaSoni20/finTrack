@@ -4,7 +4,7 @@ FinTrack is a powerful AI-driven expense tracking app designed to make personal 
 
 Built with a modern full-stack stack using Next.js 15, React 19, Prisma, and Gemini AI, it offers smart categorization, background jobs, budget alerts, and seamless user experience.
 
-🌐 **Live Demo** → [fintrack.vercel.app](fin-track-khaki.vercel.app)
+🌐 **Live Demo** → [fin-track-khaki.vercel.app](fin-track-khaki.vercel.app)
 
 ---
 
